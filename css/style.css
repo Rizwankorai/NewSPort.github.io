@@ -65,6 +65,7 @@ header {
   position: relative;
   width: 100%;
   display: block;
+  overflow:hidden;
 }
 .navbar {
   padding-top: 40px;
