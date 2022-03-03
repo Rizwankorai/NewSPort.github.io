@@ -1,0 +1,462 @@
+/* importing fonts */
+
+/* Bold fonts */
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../fonts/BebasNeue\ Bold.ttf);
+}
+/* Regular fonts */
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../fonts/BebasNeue-Regular.ttf);
+}
+/* bebas neue book fonts */
+@font-face {
+  font-family: "bebas neue book";
+  src: url(../fonts/BebasNeue\ Book.otf);
+}
+/* resetting */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue";
+}
+:root {
+  --bg-color-1: #0101a3;
+  --bg-color-2: #000052;
+  --bg-color-3: #000086;
+  --text-color-1: #fffefe;
+  --text-color-2: #dcdcf0;
+  --text-color-3: #da28da;
+  --primary-color: #e92bde;
+  --secondary-color: #c92fd9;
+  --form-text: #f490ee;
+  --gradient: linear-gradient(to bottom, var(--bg-color-1) 80%, #00004a);
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  background: var(--bg-color-1);
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  border: none;
+}
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+/* Styling navbar */
+/* header {
+  position: relative;
+} */
+.navbar {
+  margin-top: 40px;
+  margin-bottom: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.navbar .menubar li {
+  margin-right: 20px;
+}
+.navbar .menubar li a {
+  color: var(--text-color-2);
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  transition: all 0.4s;
+}
+.navbar .menubar li a:hover {
+  color: #fff;
+}
+hr {
+  height: 20px;
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#cross {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  display: none;
+}
+.burger i {
+  font-size: 20px;
+  color: var(--text-color-2);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.burger {
+  display: none;
+}
+.burger i:hover {
+  color: #fff;
+}
+.display-none {
+  display: none;
+}
+.right {
+  right: 0 !important;
+}
+
+/* Stylig home section */
+.home {
+  background: var(--gradient);
+  padding: 4rem 0;
+}
+.home .heading h1 {
+  position: relative;
+  color: var(--text-color-1);
+  line-height: 1.2;
+}
+.heading {
+  margin: 1rem 0;
+}
+.date p {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.date {
+  margin-bottom: 1rem;
+}
+.text p {
+  color: var(--text-color-2);
+  font-size: 23px;
+  font-family: "bebas neue book";
+  font-weight: lighter;
+}
+.text {
+  max-width: 280px;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.btn button {
+  padding: 0.5rem 2rem;
+  color: var(--text-color-2);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+.col-2 {
+  flex-basis: 48%;
+  max-width: 5760px;
+}
+.col-2 .img {
+  width: 100%;
+}
+.col-2 .img img {
+  max-width: 90%;
+}
+/* Our teams section */
+#team {
+  padding: 4rem 0 3rem 0;
+  background: var(--gradient);
+}
+#team .heading {
+  text-align: center;
+  color: var(--text-color-1);
+  margin-bottom: 1.8rem;
+}
+#team .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  place-items: center;
+  grid-gap: 2rem;
+}
+.col-3 {
+  max-width: 280px;
+  text-align: center;
+}
+.col-3 .img {
+  width: 100%;
+}
+.col-3 .img img {
+  max-width: 100%;
+}
+.col-3 .content {
+  margin: 2rem 0;
+  color: var(--text-color-2);
+}
+.col-3 .content h6 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+.col-3 .content p {
+  font-family: "bebas neue book";
+  font-weight: 100;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Styling about section */
+.about {
+  padding: 2rem 0 4rem 0;
+  text-align: center;
+}
+h3 {
+  font-size: 40px;
+  color: var(--text-color-1);
+}
+.about .heading {
+  margin: 1rem 0;
+}
+.about .text {
+  max-width: 550px;
+  margin: 0 auto 1rem auto;
+}
+.about .img {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+.about .img img {
+  max-width: 90%;
+}
+/* Styling compete section */
+.compete {
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+.compete .col-2 h3 {
+  margin: 1rem 0;
+}
+.compete .row .col-2:nth-child(2) {
+  text-align: right;
+  margin-right: 2rem;
+}
+.compete p {
+  max-width: 200px;
+  margin-bottom: 1rem;
+  color: var(--text-color-2);
+  font-size: 18px;
+  text-align: right;
+  margin-left: auto;
+}
+.compete .col-2 .img {
+  width: 100%;
+}
+.compete .img img {
+  max-width: 87%;
+}
+/* Styling training section */
+.training {
+  padding: 3rem 0;
+}
+.training h3 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.training .col-2 p {
+  max-width: 200px;
+  margin-bottom: 1rem;
+  color: var(--text-color-2);
+  font-size: 18px;
+  text-align: left;
+  margin-right: auto;
+}
+.training .col-2:nth-child(1) {
+  margin-left: 2rem;
+}
+.training .img {
+  width: 100%;
+}
+.training .img img {
+  max-width: 90%;
+}
+/* Styling blog section */
+.blog {
+  margin: 2rem 0;
+  padding: 1.6rem 0 3rem 0;
+  background: var(--bg-color-3);
+}
+.blog .heading {
+  text-align: center;
+  margin-bottom: 1.9rem;
+}
+.blog .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  place-items: center;
+  grid-gap: 3rem;
+}
+.blog .row .content {
+  max-width: 260px;
+  text-align: left;
+  margin: 1rem 0;
+}
+.blog .row .content p {
+  margin: 0 0 0.5rem 0;
+}
+.blog .col-3 .content h6 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+/* Styling newsletter section */
+.newletter {
+  padding: 3rem 0;
+}
+input,
+textarea {
+  outline: none;
+  border: 1px solid var(--text-color-1);
+  background: transparent;
+  padding: 0.3rem 0.5rem;
+  text-transform: none;
+}
+.newletter .row .col-2:nth-child(2) {
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  width: 100%;
+}
+.newletter .col-2 h3 {
+  margin-bottom: 1rem;
+}
+.newletter .col-2 p {
+  margin-bottom: 1rem;
+  max-width: 280px;
+  font-weight: 300;
+  text-align: left;
+  margin-right: auto;
+  color: var(--text-color-2);
+  font-family: "bebas neue book";
+}
+.name,
+.email,
+.textarea,
+.form-foot {
+  width: 100%;
+  margin-bottom: 0.9rem;
+}
+.form-foot {
+  margin-bottom: 0;
+}
+.fname,
+.lname {
+  width: 48%;
+}
+.fname input,
+.lname input {
+  width: 100%;
+}
+input,
+textarea {
+  width: 100%;
+  color: var(--form-text);
+  font-size: 1.1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--form-text);
+}
+form .check {
+  width: 10%;
+}
+form .content {
+  max-width: 85%;
+}
+.newletter .col-2 form p {
+  margin-bottom: 1rem;
+  max-width: 100%;
+  font-weight: 300;
+  text-align: left;
+  /* margin-right: auto; */
+  color: var(--text-color-2);
+  font-family: "bebas neue book";
+}
+.newletter .col-2:nth-child(2) h3 {
+  font-size: 25px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--form-text);
+  background-color: transparent;
+}
+textarea {
+  resize: none;
+}
+
+/* Styling map section */
+.location {
+  margin: 1rem 0 3rem 0;
+}
+.map {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.map iframe {
+  width: 100%;
+}
+.location .content {
+  color: var(--text-color-1);
+  max-width: 500px;
+  margin: auto;
+}
+.content p {
+  font-family: "bebas neue book";
+  font-weight: 300;
+}
+.location .heading {
+  text-align: center;
+}
+/* Footer section */
+footer {
+  margin-bottom: 3rem;
+}
+footer .brand {
+  margin-bottom: 2rem;
+}
+footer .row .content {
+  display: inline-block;
+  max-width: 576px;
+  margin-right: auto !important;
+}
+footer .content > div {
+  display: inline-block;
+}
+footer .content div:nth-child(2) {
+  margin-left: 2rem;
+}
+footer li a {
+  color: var(--text-color-1);
+}
+/* copyright section */
+.copyright {
+  margin: 1.5rem 0;
+}
+.copyright p,
+a,
+i {
+  color: var(--text-color-1);
+}
+.copyright span {
+  color: var(--text-color-3);
+  margin-right: 0.5rem;
+}
+.right .facebook {
+  margin-right: 0.8rem;
+}
+.right .instagram {
+  margin-right: 0.8rem;
+}
+.right .twitter {
+  margin-right: 0.8rem;
+}
+.copyright .left,
+.copyright .right {
+  margin-bottom: 1rem;
+}
