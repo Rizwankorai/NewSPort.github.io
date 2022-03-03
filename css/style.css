@@ -61,14 +61,20 @@ h1 {
   margin: auto;
 }
 /* Styling navbar */
-/* header {
+header {
   position: relative;
-} */
+  width: 100%;
+  display: block;
+}
 .navbar {
-  margin-top: 40px;
+  padding-top: 40px;
   margin-bottom: 0;
   margin-left: 50px;
   margin-right: 50px;
+  overflow: hidden;
+}
+.menubar {
+  overflow: hidden;
 }
 .navbar .menubar li {
   margin-right: 20px;
